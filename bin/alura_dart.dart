@@ -1,24 +1,17 @@
 void main() {
-  String nome = "Laranja";
-  double peso = 10.2;
-  String cor = "Verde e Amarela";
-  String sabor = "Doce e Cítrica";
-  int diasDesdeColheita = 20;
-  bool isMadura = funcEstaMadura(diasDesdeColheita);
-
   Legumes mandioca = Legumes('Mandioca', 1200, 'Marrom', true);
   Frutas banana = Frutas('Banana', 75, 'Amarela', 'Doce', 12);
   Nozes macadamia = Nozes('Macadâmia', 2, 'Branco Amarelado', 'Doce', 20, 35);
   Citricas limao = Citricas('Limão', 100, 'Verde', 'Azedo', 5, 9);
 
-  // mandioca.printAlimento();
-  // macadamia.printAlimento();
-  // limao.printAlimento();
-  // banana.printAlimento();
-  //
-  // mandioca.cozinhar();
-  // limao.fazerSuco();
-  // banana.separarIngredientes();
+  mandioca.printAlimento();
+  macadamia.printAlimento();
+  limao.printAlimento();
+  banana.printAlimento();
+
+  mandioca.cozinhar();
+  limao.fazerSuco();
+  banana.separarIngredientes();
 
   macadamia.fazerMassa();
 }
